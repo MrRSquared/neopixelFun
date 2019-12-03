@@ -16,7 +16,7 @@ FASTLED_USING_NAMESPACE
 //#define CLK_PIN   4
 #define LED_TYPE    WS2811
 #define COLOR_ORDER RGB
-#define NUM_LEDS    236
+#define NUM_LEDS    386
 CRGB leds[NUM_LEDS];
 
 #define BRIGHTNESS          98
@@ -46,5 +46,5 @@ void loop()
   FastLED.delay(1000/FRAMES_PER_SECOND); 
 
   // do some periodic updates
-  EVERY_N_MILLISECONDS( 100 ) { gHue++; } // slowly cycle the "base color" through the rainbow
+  EVERY_N_MILLISECONDS( 85 ) { gHue++; } // slowly cycle the "base color" through the rainbow
 }
